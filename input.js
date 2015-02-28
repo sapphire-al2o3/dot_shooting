@@ -42,7 +42,7 @@ var Input = function() {
 			return changed[k] & keyState[k]
 		},
 		getKeyCode: function() {
-			return keyCode;	
+			return keyCode;
 		},
 		getAnyKey: function() {
 			return keyCount > 0;
