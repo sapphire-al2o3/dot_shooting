@@ -1,9 +1,14 @@
 var Pad = function() {
 	'use strict';
 	
-	var keyState = [],
+	var pad,
+		keyState = [],
 		prevKeyState = [],
 		chenged = [];
+	
+	function connected(e) {
+		
+	}
 	
 	return {
 		getKey: function(k) {
@@ -15,8 +20,11 @@ var Pad = function() {
 		getKeyUp: function(k) {
 			return changed[k] & !keyState[k];
 		},
+		getAxisX: function() {
+//			pad.axis
+		},
 		update: function() {
-			var pad = navigator.webkitGetGamepads()[0];
+			pad = navigator.webkitGetGamepads()[0];
 			if (pad) {
 				for(var i = 0; i < pad.buttons.length; i++) {
 					keyState[i] = pad.buttons[i];
