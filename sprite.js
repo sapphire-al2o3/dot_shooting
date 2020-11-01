@@ -36,11 +36,3 @@ Sprite.prototype.draw = function(ctx, x, y, i) {
 		ctx.drawImage(this.image, f.x, f.y, f.w, f.h, x, y, f.w, f.h);
 	}
 };
-
-GL.Sprite = function(src) {
-	this.image = new Image();
-	this.image.src = src;
-	this.onload = function() {
-		
-	};
-};
