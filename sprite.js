@@ -14,8 +14,7 @@ Sprite.prototype.frame = function(x, y, w, h) {
 	});
 };
 
-Sprite.prototype.slice = function(w, h) {
-	var width = this.image.width;
+Sprite.prototype.slice = function(w, h, width) {
 	for(var i = 0; i < width; i++) {
 		this.frames.push({
 			x: i * w,

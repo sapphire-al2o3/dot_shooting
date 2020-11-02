@@ -54,7 +54,7 @@
 	// HP
 	sprite.frame( 0, 32, 12, 8);
 	
-	number.slice(7, 9);
+	number.slice(7, 9, 80);
 	
 	content.number = number;
 	
