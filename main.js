@@ -52,7 +52,7 @@
 	sprite.frame(40, 16, 8, 8);
 	
 	// HP
-	sprite.frame( 0, 32, 12, 8);
+	sprite.frame( 1, 32, 11, 8);
 	
 	number.slice(7, 9, 80);
 	
